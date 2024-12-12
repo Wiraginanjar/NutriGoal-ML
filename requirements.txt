@@ -1,0 +1,11 @@
+matplotlib==3.9.2
+pandas==2.2.3
+seaborn==0.13.2
+tensorflow==2.9.0
+tensorflowjs==3.19.0
+scipy==1.10.1
+nltk==3.7
+numpy==1.24.3
+wordcloud
+scikit-learn==1.2.2
+flask==3.1.0
