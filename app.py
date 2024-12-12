@@ -12,13 +12,13 @@ tf.config.set_visible_devices([], 'GPU')  # Disable GPU jika terdeteksi
 print("Available devices:", tf.config.list_physical_devices('CPU'))
 
 # Load scaler and models
-scaler1 = joblib.load('models/scaler1.pkl')
-scaler2 = joblib.load('models/scaler2.pkl')
-model1 = tf.keras.models.load_model('models/model1.h5')
-model2 = tf.keras.models.load_model('models/model2.h5')
+scaler1 = joblib.load('https://storage.googleapis.com/firebase-dbnutri/model/scaler1.pkl')
+scaler2 = joblib.load('https://storage.googleapis.com/firebase-dbnutri/model/scaler2.pkl')
+model1 = tf.keras.models.load_model('https://storage.googleapis.com/firebase-dbnutri/model/model1.h5')
+model2 = tf.keras.models.load_model('https://storage.googleapis.com/firebase-dbnutri/model/model2.h5')
 
 # Load food dataset
-food_data = pd.read_csv('data/combine-dataset-kategori.csv')
+food_data = pd.read_csv('https://storage.googleapis.com/firebase-dbnutri/combine-dataset-kategori.csv')
 
 # Initialize Flask
 app = Flask(__name__)

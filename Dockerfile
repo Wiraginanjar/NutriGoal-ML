@@ -13,10 +13,6 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
-ENV FLASK_APP=app.py
-ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_RUN_PORT=5000
-
 # Make port 8080 available to the world outside this container
 
 COPY . .
@@ -25,4 +21,4 @@ EXPOSE 5000
 
 # Run app.py when the container launches
 
-CMD ["python", "app-multiple-fix.py"]
+CMD ["python", "app.py"]
