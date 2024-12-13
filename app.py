@@ -158,14 +158,15 @@ def output_model(age, height, weight, gender, activity_level, food_preference, d
         favorite_food_names = []
         favorite_food_preferences = []
         rfp_id = 0
-        user_id = 1
-        global ffn_counter, ffp_counter, rfboc_counter  # Deklarasi variabel global
+        global user_counter,ffn_counter, ffp_counter, rfboc_counter  # Deklarasi variabel global
         # Assign unique IDs using counters
+        user_id = user_counter
         ffn_id = ffn_counter
         ffp_id = ffp_counter
         rfboc_id = rfboc_counter
         
         # Increment counters
+        user_counter += 1
         ffn_counter += 1
         ffp_counter += 1
         rfboc_counter += 1
