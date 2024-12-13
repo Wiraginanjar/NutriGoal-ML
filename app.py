@@ -23,6 +23,7 @@ food_data = pd.read_csv('data/combine-dataset-kategori.csv')
 # Initialize Flask
 app = Flask(__name__)
 
+user_counter = 1
 ffn_counter = 1
 ffp_counter = 1
 rfboc_counter = 1
